@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="up_button">Up Button</string>
+    <string name="left_button">Left Button</string>
+    <string name="right_button">Right Button</string>
+    <string name="down_button">Down Button</string>
+    <string name="up">up</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="down">down</string>
+    <string name="next">Next</string>
+    <string name="Keyboard">keyboard</string>
+    <string name="Mouse">mouse</string>
+    <string name="Back">back</string>
+</resources>
