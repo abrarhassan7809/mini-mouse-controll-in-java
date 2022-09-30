@@ -12,4 +12,5 @@
     <string name="Keyboard">keyboard</string>
     <string name="Mouse">mouse</string>
     <string name="Back">back</string>
+    <string name="shut_down">Shut Down</string>
 </resources>

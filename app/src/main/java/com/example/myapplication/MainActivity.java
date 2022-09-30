@@ -254,6 +254,6 @@ public class MainActivity extends AppCompatActivity{
 
             System.out.println("Error Found" + error);
         });
-        request.get("http://192.168.100.24:8000/start-scroll/" +x+ "/" +y);
+        request.get("http://192.168.1.32:8000/start-scroll/" +x+ "/" +y);
     }
 }

@@ -1,10 +1,15 @@
 package com.example.myapplication;
 
+import static android.view.MotionEvent.INVALID_POINTER_ID;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.MotionEventCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -31,6 +36,7 @@ public class Keyboard extends AppCompatActivity {
         Button btn_down = findViewById(R.id.button_down);
 
         Button btn_back = findViewById(R.id.keyboard_back);
+        Button btn_shutdown = findViewById(R.id.shutdown);
 
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +75,12 @@ public class Keyboard extends AppCompatActivity {
                 getKeysResponse("down");
             }
         });
+        btn_shutdown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getKeysResponse("cmd");
+            }
+        });
     }
 
 //    -------------------------------------
@@ -88,6 +100,6 @@ public class Keyboard extends AppCompatActivity {
                 System.out.println("Error Found"+error);
             }
         });
-        request.get("http://192.168.100.24:8000/get-key/"+keyType);
+        request.get("http://192.168.1.32:8000/get-key/"+keyType);
     }
 }
